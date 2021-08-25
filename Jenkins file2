@@ -1,11 +1,26 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+node{
+     
+     stage('SCM Checkout'){
+     echo"make checkout"
+     //git credentialId: 'github',url: 
+     }
+     
+     stage('Build project'){
+     
+     echo"Build my project succesfully"
+     }
+     
+     stage("Test project"){
+     
+     echo"Test my project successfully"
+     }
+     
+     stage('Deploy project'){
+     
+     echo"Deploy my project succesfully"
+     }
+     stage('Release the project succesfully'){
+     
+     echo"Finally ready to release my groovyscript"
+     }
     }
-}
