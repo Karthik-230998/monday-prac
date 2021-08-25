@@ -2,7 +2,7 @@ node{
      
      stage('SCM Checkout'){
      echo"make checkout"
-     //git credentialId: 'github',url: 
+     //git credentialId: 'github',url: 'https://github.com/Karthik-230998/monday-prac.git'
      }
      
      stage('Build project'){
